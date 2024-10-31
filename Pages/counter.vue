@@ -1,17 +1,3 @@
 <template>
-    <div>
-        <span>
-            <NuxtLink to="/">Home</NuxtLink>
-        </span>
-        <span class="endEle">
-            <NuxtLink to="/counter">Counter</NuxtLink>
-        </span>
-    </div>
-    <hr />
-    <Counter />
+    <div><Counter /></div>
 </template>
-<style>
-    .endEle {
-        margin-left: 10px;
-    }
-</style>
