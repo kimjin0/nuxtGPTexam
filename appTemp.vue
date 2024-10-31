@@ -5,10 +5,13 @@
   <p>
     <a href="#" @click="changeView('counter')">Counter</a>
   </p>
+  <hr />
   <LazyHomeWelcome v-if="view === 'home'" />
   <LazyCounter v-if="view === 'counter'" />
 
-
+  <hr />
+  <NuxtPage />
+  
 </template>
 <script setup>
 const view = ref('home');
