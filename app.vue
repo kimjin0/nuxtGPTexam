@@ -1,20 +1,20 @@
 <template>
   <p>
-    <button @click="toggle">Toggle</button>
+    <a href="#" @click="changeView('home')">Home</a>
   </p>
+  <p>
+    <a href="#" @click="changeView('counter')">Counter</a>
+  </p>
+  <LazyHomeWelcome v-if="view === 'home'" />
+  <LazyCounter v-if="view === 'counter'" />
 
-  <div v-if="MyComponent == 'welcome'">
-    <HomeWelcome  />
-  </div>
-  <div v-else>
-    <Counter  />
-  </div>
+
 </template>
 <script setup>
-const MyComponent = ref('counter'); 
+const view = ref('home');
 
-function toggle() {
-  console.log(MyComponent.value);
-  MyComponent.value = MyComponent.value == 'welcome' ? 'counter' : 'welcome';
+function changeView(name){
+  view.value = name; 
 }
+
 </script>
