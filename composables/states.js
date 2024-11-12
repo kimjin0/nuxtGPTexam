@@ -1,0 +1,1 @@
+export const useCart = () => useState(()=>[]) // default value is an empty array
