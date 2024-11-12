@@ -4,7 +4,7 @@
             <NuxtLink to="/">Home</NuxtLink>
         </span>
         <span class="marginleft">
-            <NuxtLink to="counter">Counter</NuxtLink>
+            <NuxtLink to="counter">Counter <span>(0)</span></NuxtLink>
         </span>
         <span class="marginleft">
             <NuxtLink to="profile">Profile</NuxtLink>
